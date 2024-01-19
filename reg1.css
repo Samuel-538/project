@@ -1,0 +1,63 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-image: url('lbg1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sai {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #ff0c0c;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.967);
+    background-image: url('lbg1.jpg');
+}
+div
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    color: #860038;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#submit:hover {
+    background-color: #45a059;
+}

@@ -1,0 +1,28 @@
+<!-- login.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <form id="loginForm" action="/login" method="post">
+        <div class="sai">
+            <h2 id="h">Login Form</h2>
+            <label for="email">Enter the email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Enter the password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Login" id="loginButton" class="sub" onclick="window.location.href='401.html'"><br><br>
+        </div>
+        <div class="div2">
+            <h1>New Here?</h1>
+            <p>SignUp and Savour the taste!</p>
+            <button type="button" id="signupButton" onclick="window.location.href='signup.html'">SignUp</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Received</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Order Received</h1>
+
+    <script>
+        // Retrieve order details from URL parameters
+        var urlParams = new URLSearchParams(window.location.search);
+        var cakeType = urlParams.get('cakeType');
+        var cakeSize = urlParams.get('cakeSize');
+        var message = urlParams.get('message');
+        var contactInfo = urlParams.get('contactInfo');
+        var shippingAddress = urlParams.get('shippingAddress');
+
+        // Display order details
+        document.body.innerHTML += `
+            <p><strong>Cake Type:</strong> ${cakeType}</p>
+            <p><strong>Cake Size:</strong> ${cakeSize}</p>
+            <p><strong>Message:</strong> ${message}</p>
+            <p><strong>Contact Information:</strong> ${contactInfo}</p>
+            <p><strong>Shipping Address:</strong> ${shippingAddress}</p>
+        `;
+    </script>
+</body>
+</html>

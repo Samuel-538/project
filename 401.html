@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJ Cakes</title>
+    <link rel="stylesheet" href="401.css">
+</head>
+<body>
+    <header>
+        <h1>Make your cake!</h1>
+    </header>
+
+    <main>
+        <section class="cake-customization">
+            <h2>Design to your heart</h2>
+            <p>Select your cake type:</p>
+            <select id="cakeType">
+                <option value="" disabled selected>Select Cake Type</option>
+                <option value="birthday">Birthday Cake</option>
+                <option value="wedding">Wedding Cake</option>
+                <option value="anniversary">Anniversary Cake</option>
+            </select>
+            <p>Choose your cake size:</p>
+            <select id="cakeSize">
+                <option value="" disabled selected>Select Cake Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <p>Add a personalized message to your cake:</p>
+            <input type="text" id="message" placeholder="Enter your message here...">
+        </section>
+
+        <section class="order-details">
+            <h2>Order Details</h2>
+            <p id="cakeSummary"></p>
+            <p>Contact Information:</p>
+            <input type="text" id="contactInfo" placeholder="Enter your contact information...">
+            <p>Shipping Address:</p>
+            <input type="text" id="shippingAddress" placeholder="Enter your shipping address...">
+            <button id="orderButton" onclick="placeOrder()">Place Order</button>
+        </section>
+    </main>
+
+    
+
+    <footer>
+        <div class="footer-details">
+            <p><a href="tel:1234567890">984562170</a></p>
+            <p><a href="mailto:info@example.com">sjs505@gmail.com</a></p>
+            <p>Monday - Friday: 9 AM - 12 PM</p>
+        </div>
+    </footer>
+<script>
+    function placeOrder() {
+        var cakeType = document.getElementById("cakeType").value;
+        var cakeSize = document.getElementById("cakeSize").value;
+        var message = document.getElementById("message").value;
+        var contactInfo = document.getElementById("contactInfo").value;
+        var shippingAddress = document.getElementById("shippingAddress").value;
+
+        if (cakeType && cakeSize && message && contactInfo && shippingAddress) {
+            // Construct the URL with parameters
+            var url = 'success.html?' +
+                'cakeType=' + encodeURIComponent(cakeType) +
+                '&cakeSize=' + encodeURIComponent(cakeSize) +
+                '&message=' + encodeURIComponent(message) +
+                '&contactInfo=' + encodeURIComponent(contactInfo) +
+                '&shippingAddress=' + encodeURIComponent(shippingAddress);
+
+            // Redirect to success.html with parameters
+            window.location.href = url;
+        } else {
+            alert("Please fill in all the fields before placing the order.");
+        }
+    }
+</script>
+
+</body>
+</html>

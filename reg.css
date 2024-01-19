@@ -1,0 +1,78 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-image: url('lbg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sai {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url('lbg.jpg');
+}
+.div2{
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url('lbg1.jpg');
+}
+h1{
+    color: #fafafa;
+}
+p{
+    color: #f8f8f8;
+}
+
+h2 {
+    text-align: center;
+    color: #10da32;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    color: #06a7b9;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #8e5151;
+    border-radius: 4px;
+}
+
+#submit {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#submit:hover {
+    background-color: #45a059;
+}
